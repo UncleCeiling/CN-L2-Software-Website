@@ -42,7 +42,7 @@ body {
     right: 10vw;
     bottom: 10vh;
 }
-.nav_bar {
+.navbar {
     position: fixed;
     margin: 0;
     padding: 0;
@@ -51,7 +51,7 @@ body {
     overflow:hidden;
     z-index: 1;
 }
-.nav_bar a {
+.navbar a {
     float: left;
     color: navy;
     text-align: center;
@@ -59,11 +59,11 @@ body {
     text-decoration: none;
     font-size: 16;
 }
-.nav_bar a:hover {
+.navbar a:hover {
     background-color: forestgreen;
     color: skyblue;
 }
-.nav_bar a.active {
+.navbar a.active {
     background-color: navy;
     color: skyblue;
 }
@@ -75,7 +75,7 @@ body {
     width: 100vw;
     min-height: 100vh;
 }
-.about_me_container {
+.aboutmecontainer {
     padding-inline: 10vw;
     display: flex;
     flex-direction: row;
