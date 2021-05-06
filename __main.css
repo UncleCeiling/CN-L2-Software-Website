@@ -1,0 +1,121 @@
+body {
+    margin:0;
+    padding:0;
+    font-family:Helvetica, Arial;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #202225;
+    color: #dcddde;
+    text-align: center
+}
+.diagonal {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to top left, navy 50%,forestgreen 50%);
+    background-repeat: no-repeat;
+}
+.circle {
+    position: absolute;
+    left: 35vw;
+    top: 50vh;
+    margin-top: -15vw;
+    height: 30vw;
+    width: 30vw;
+    background-color:skyblue;
+    border-radius: 50%;
+    display: inline-block;
+}
+.centre:hover .hoverfade {
+    opacity: 0.5;
+}
+.centre:hover .hovershow {
+    opacity: 1;
+}
+.topleft {
+    position: absolute;
+    left: 10vw;
+    top: 10vh;
+}
+.bottomright {
+    position: absolute;
+    right: 10vw;
+    bottom: 10vh;
+}
+.nav_bar {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-color: skyblue;
+    right: 0;
+    overflow:hidden;
+    z-index: 1;
+}
+.nav_bar a {
+    float: left;
+    color: navy;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 16;
+}
+.nav_bar a:hover {
+    background-color: forestgreen;
+    color: skyblue;
+}
+.nav_bar a.active {
+    background-color: navy;
+    color: skyblue;
+}
+.scrollable{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+}
+.about_me_container {
+    padding-inline: 10vw;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 56px;
+    width: 80vw;
+    height: 80vh;
+}
+h1 {
+    opacity: 0;
+    font-style: normal;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    color: #dcddde;
+    background-color: #20222599;
+    display: inline-block;
+    padding-block: 16px;
+    padding-inline: 32px;
+}
+h2 {
+    border-radius: 5px;
+    color: #dcddde;
+    background-color: #20222599;
+    display: inline-block;
+    padding-block: 16px;
+    padding-inline: 32px;
+    align-content: center;
+}
+h3 {
+    font-size: 24pt;
+    padding-inline: 24px;
+    padding-block: 12px;
+}
+p {
+    font-size: 16pt;
+    padding-inline: 24px;
+    padding-block: 12px;
+}
